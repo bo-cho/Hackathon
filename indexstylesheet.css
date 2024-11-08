@@ -1,3 +1,7 @@
+body
+{
+    margin: 0px;
+}
 header
 {
     background-color: #BDDBDB;
@@ -22,6 +26,8 @@ header
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 .Button
 {
