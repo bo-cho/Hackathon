@@ -1,52 +1,43 @@
-body
-{
-    margin: 0px;
+body {
+  margin: 0px;
 }
-header
-{
-    background-color: #BDDBDB;
-    width: 100%;
-    height: 50px;
-    margin: 0px;
+header {
+  background-color: #bddbdb;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
 }
-.Title
-{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+.Title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
-.Explanation
-{
-    text-align: center;
-    font-size: 13px;
-    margin-bottom: 50px;
+.Explanation {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 30px;
 }
-.ButtonGroup
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+.ButtonGroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.Button
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 200px;
-    border-radius: 100px;
-    background-color: #BDDBDB;
-    text-align: center;
-    margin: 20px;
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: #bddbdb;
+  text-align: center;
+
+  margin-bottom: 25px;
 }
-.ButtonText
-{
-    font-size: 15px;
-    color: white;
+.ButtonText {
+  font-size: 15px;
+  color: white;
 }
-.attention
-{
-    font-size: 10px;
+.attention {
+  font-size: 10px;
 }
