@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #bddbdb;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.RoginBox {
+  display: flex;
+  height: 400px;
+  width: 80%;
+  background-color: #E6F9F9;
+  margin: 0% 10%;
+}
