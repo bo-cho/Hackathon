@@ -9,6 +9,10 @@ header {
   margin: 0px;
 }
 
+#All{
+  margin-top: 60px;
+}
+
 .Title {
   display: flex;
   justify-content: center;
