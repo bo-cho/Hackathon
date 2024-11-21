@@ -102,21 +102,24 @@ header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        height: 60px;
+        justify-content: center;
       }
       .graph-info {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-right: 8px;
 
         .graph-text {
           font-size: 13px;
-          margin-right: 15px;
+          margin-right: 10px;
           width: 80px;
         }
 
         .graph-img {
           width: 10px;
-          margin-right: 5px;
+          margin-right: 2px;
         }
 
         span {
