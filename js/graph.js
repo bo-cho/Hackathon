@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       data: {
         datasets: [
           {
-            data: [20, 80],
+            data: [80, 20],
             backgroundColor: [
-              "rgba(255, 127, 127, 1)",
+              "rgba(246, 46, 54, 1)",
               "rgba(212, 217, 214, 1)", //#d4d9d6 リードグレイ reed gray
             ],
             borderWidth: 0,
@@ -68,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
       data: {
         datasets: [
           {
-            data: [76, 24, 10],
+            data: [40, 44, 10],
             backgroundColor: [
-              "rgba(20, 122, 214, 1)",
-              "rgba(214, 20, 20, 1)",
-              "rgba(72, 72, 72, 1)",
+              "rgba(0, 160,222, 1)",
+              "rgba(246, 46, 54, 1)",
+              "rgba(212, 217, 214, 1)",
             ],
             borderWidth: 0,
           },
@@ -99,14 +99,14 @@ document.addEventListener("DOMContentLoaded", () => {
       data: {
         datasets: [
           {
-            data: [76, 24, 40, 45, 20, 15],
+            data: [20, 20, 20, 20, 20, 20],
             backgroundColor: [
-              "rgba(214, 20, 20, 1)",
-              "rgba(255, 195, 0, 1)",
-              "rgba(98, 255, 0, 1)",
-              "rgba(0, 229, 255, 1)",
-              "rgba(0, 81, 255, 1)",
-              "rgba(144, 0, 255, 1)",
+              "rgba(242,112,112, 1)",
+              "rgba(239,162,58, 1)",
+              "rgba(237,200, 34, 1)",
+              "rgba(94, 211, 141, 1)",
+              "rgba(80, 199, 218, 1)",
+              "rgba(69, 137, 235, 1)",
             ],
             borderWidth: 0,
           },
