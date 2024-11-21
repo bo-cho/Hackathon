@@ -1,121 +1,183 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/graph.js"></script>
+    <link rel="stylesheet" href="../CSS/top.css" />
+    <title>市民の声を集める君</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="../js/graph.js"></script>
-  <link rel="stylesheet" href="../CSS/top.css" />
-  <title>市民の声を集める君</title>
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <span class="header">須賀川市</span>
-    </div>
-  </header>
-  <div class="main-container">
-    <div class="post-container">
-      <div class="post-top-container">
-        <img class="icon-img" src="../Assets/icon.svg">
-        <span class="username">あちゃなる</span>
-        <span class="post-time-ago">6時間前</span>
+  <body>
+    <header>
+      <div class="header">
+        <span class="header">須賀川市</span>
       </div>
-      <div class="boby-text">
-        体育館の予約めんどくさいかも
-      </div>
-      <div class="post-buttom-container">
-        <img src="../Assets/heart-icon.svg">
-        <div class="heart-count">100</div>
-        <img src="../Assets/share-icon.svg">
-        <img src="../Assets/navigate_next.svg">
-      </div>
-      <!-- アナリティクス部分 -->
-      <div class="analytics-container">
-        <div class="analytics">
-          <span>総閲覧数 200</span>
-          <!-- いいねグラフ部分 -->
-          <div class="graph-container">
-            <div class="graph">
-              <canvas id="good-Chart"></canvas>
-            </div>
-            <div class="graph-info-container">
-              <div class="graph-info">
-                <span class="graph-text">いいね獲得率 </span>
-                <img class="graph-img" src="../Assets/bule-icon.svg">
-                <span>いいね数 38人 </span>
+    </header>
+    <div class="main-container">
+      <div class="post-container">
+        <div class="post-top-container">
+          <img class="icon-img" src="../Assets/icon.svg" />
+          <span class="username">あちゃなる</span>
+          <span class="post-time-ago">6時間前</span>
+        </div>
+        <div class="boby-text">体育館の予約めんどくさいかも</div>
+        <div class="post-buttom-container">
+          <img src="../Assets/heart-icon.svg" />
+          <div class="heart-count">100</div>
+          <img src="../Assets/share-icon.svg" />
+          <span>共有</span>
+          <img src="../Assets/navigate_next.svg" />
+          <span>詳細</span>
+        </div>
+        <!-- アナリティクス部分 -->
+        <div class="analytics-container">
+          <div class="analytics">
+            <span>総閲覧数 200</span>
+            <!-- いいねグラフ部分 -->
+            <div class="graph-container">
+              <div class="graph">
+                <canvas id="good-Chart"></canvas>
               </div>
-            </div>
-          </div>
-          <hr>
-          <!-- 性別グラフ部分 -->
-          <div class="graph-container">
-            <div class="graph">
-              <canvas id="gender-Chart"></canvas>
-            </div>
-            <div class="graph-info-container">
-              <div class="graph-info">
-                <span class="graph-text">性別獲得率 </span>
-              </div>
-              <div class="categorys">
+              <div class="graph-info-container">
                 <div class="graph-info">
-                  <img class="graph-img" src="../Assets/bule-icon.svg">
-                  <span>男性 38人 </span>
-                </div>
-                <div class="graph-info">
-                  <img class="graph-img" src="../Assets/red-icon.svg">
-                  <span>女性 38人 </span>
-                </div>
-                <div class="graph-info">
-                  <img class="graph-img" src="../Assets/gray-icon.svg">
-                  <span>未回答 38人 </span>
+                  <span class="graph-text">いいね獲得率 </span>
+                  <div class="categorys">
+                    <div class="graph-info">
+                      <img class="graph-img" src="../Assets/red-icon.svg" />
+                      <span>いいね数 38人 </span>
+                    </div>
+                    <div class="graph-info">
+                      <img class="graph-img" src="../Assets/gray-icon.svg" />
+                      <span>未いいね数 38人 </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <hr>
-          <!-- 年代グラフ部分 -->
-          <div class="graph-container">
-            <div class="graph">
-              <canvas id="age-Chart"></canvas>
-            </div>
-            <div class="graph-info-container">
-              <div class="graph-info">
-                <span class="graph-text">年代獲得率 </span>
+            <hr />
+            <!-- 性別グラフ部分 -->
+            <div class="graph-container">
+              <div class="graph">
+                <canvas id="gender-Chart"></canvas>
               </div>
-              <div class="categorys">
+              <div class="graph-info-container">
                 <div class="graph-info">
-                  <img class="graph-img" src="../Assets/bule-icon.svg">
-                  <span>10代 38人 </span>
+                  <span class="graph-text">性別獲得率 </span>
                 </div>
-                <div class="graph-info">
-                  <img class="graph-img" src="../Assets/red-icon.svg">
-                  <span>20代 38人 </span>
+                <div class="categorys">
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/blue-icon.svg" />
+                    <span>男性 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/red-icon.svg" />
+                    <span>女性 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/gray-icon.svg" />
+                    <span>未回答 38人 </span>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <hr />
+            <!-- 年代グラフ部分 -->
+            <div class="graph-container">
+              <div class="graph">
+                <canvas id="age-Chart"></canvas>
+              </div>
+              <div class="graph-info-container">
                 <div class="graph-info">
-                  <img class="graph-img" src="../Assets/gray-icon.svg">
-                  <span>30代 38人 </span>
+                  <span class="graph-text">年代獲得率 </span>
                 </div>
-                <div class="graph-info">
-                  <img class="graph-img" src="../Assets/bule-icon.svg">
-                  <span>40代 38人 </span>
-                </div>
-                <div class="graph-info">
-                  <img class="graph-img" src="../Assets/bule-icon.svg">
-                  <span>50代 38人 </span>
-                </div>
-                <div class="graph-info">
-                  <img class="graph-img" src="../Assets/bule-icon.svg">
-                  <span>60代 38人 </span>
+                <div class="categorys">
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/10-icon.svg" />
+                    <span>10代 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets//20-icon.svg" />
+                    <span>20代 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/30-icon.svg" />
+                    <span>30代 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/40-icon.svg" />
+                    <span>40代 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/50-icon.svg" />
+                    <span>50代 38人 </span>
+                  </div>
+                  <div class="graph-info">
+                    <img class="graph-img" src="../Assets/60-icon.svg" />
+                    <span>60代 38人 </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- 次の投稿 -->
+      <div class="post-container">
+        <div class="post-top-container">
+          <img class="icon-img" src="../Assets/icon.svg" />
+          <span class="username">あちゃなる</span>
+          <span class="post-time-ago">6時間前</span>
+        </div>
+        <div class="boby-text">体育館の予約めんどくさいかも</div>
+        <div class="post-buttom-container">
+          <img src="../Assets/heart-icon.svg" />
+          <div class="heart-count">100</div>
+          <img src="../Assets/share-icon.svg" />
+          <span>共有</span>
+          <img src="../Assets/navigate_next.svg" />
+          <span>詳細</span>
+        </div>
+      </div>
+      <!-- 次の投稿 -->
+      <div class="post-container">
+        <div class="post-top-container">
+          <img class="icon-img" src="../Assets/icon.svg" />
+          <span class="username">あちゃなる</span>
+          <span class="post-time-ago">6時間前</span>
+        </div>
+        <div class="boby-text">体育館の予約めんどくさいかも</div>
+        <div class="post-buttom-container">
+          <img src="../Assets/heart-icon.svg" />
+          <div class="heart-count">100</div>
+          <img src="../Assets/share-icon.svg" />
+          <span>共有</span>
+          <img src="../Assets/navigate_next.svg" />
+          <span>詳細</span>
+        </div>
+      </div>
+      <!-- 次の投稿 -->
+      <div class="post-container">
+        <div class="post-top-container">
+          <img class="icon-img" src="../Assets/icon.svg" />
+          <span class="username">あちゃなる</span>
+          <span class="post-time-ago">6時間前</span>
+        </div>
+        <div class="boby-text">体育館の予約めんどくさいかも</div>
+        <div class="post-buttom-container">
+          <img src="../Assets/heart-icon.svg" />
+          <div class="heart-count">100</div>
+          <img src="../Assets/share-icon.svg" />
+          <span>共有</span>
+          <img src="../Assets/navigate_next.svg" />
+          <span>詳細</span>
+        </div>
+      </div>
+      <a href="" class="btn btn--orange btn--radius">投稿</a>
     </div>
-</body>
-
+    <footer>
+      <span class="footer"></span>
+    </footer>
+  </body>
 </html>
