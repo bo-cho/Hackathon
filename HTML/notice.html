@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../js/graph.js"></script>
-    <link rel="stylesheet" href="../CSS/notice.css" />
-    <title>市民の声を集める君</title>
-  </head>
-  <body>
-    <header>
-      <div class="header">
-        <span class="header">須賀川市</span>
-      </div>
-    </header>
-    <div class="title">
-      <span>通知</span>
-    </div>
-    <div class="main-container">
-      <!-- タブ作成 -->
-      <div class="tab-switch">
-        <label>
-          <input type="radio" name="TAB" checked />
-          全通知
-        </label>
-        <div class="tab-content">タブ①の内容をここに表示します</div>
 
-        <label>
-          <input type="radio" name="TAB" />
-          マーク済み
-        </label>
-        <div class="tab-content">タブ②の内容をここに表示します</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/graph.js"></script>
+  <link rel="stylesheet" href="../CSS/notice.css" />
+  <title>市民の声を集める君</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <span class="header">須賀川市</span>
+    </div>
+  </header>
+  <div class="title">
+    <span>通知</span>
+  </div>
+  <div class="main-container">
+    <!-- タブ作成 -->
+    <div class="tab-switch">
+      <label>
+        <input type="radio" name="TAB" checked />
+        全通知
+      </label>
+      <div class="tab-content"><!-- タブ①の内容をここに表示します -->
+        <div class="comment-container">
+          <img src="../Assets/notice-icon.svg">
+          <img src="../Assets/notice-favorite.svg">
+          <img src="../Assets/notice-important.svg">
+        </div>
+        <div class="comment-container">
+          <img src="../Assets/notice-icon-sys.svg">
+        </div>
+      </div>
+
+      <label>
+        <input type="radio" name="TAB" />
+        マーク済み
+      </label>
+      <div class="tab-content"><!-- タブ②の内容をここに表示します -->
+      
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
 <!-- <!DOCTYPE html>
 <html lang="ja">
