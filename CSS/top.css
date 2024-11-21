@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+}
+header {
+  background-color: #8ac5c5;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+}
+.header {
+  text-align: center;
+  color: #484848;
+  padding-top: 15px;
+}
+
+.main-container {
+  margin: 20px;
+
+  .post-container {
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .post-top-container {
+    display: flex;
+    align-items: center;
+
+    .icon-img {
+      border-radius: 25ch;
+      margin-right: 10px;
+    }
+
+    .username {
+      color: #484848;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+
+    .post-time-ago {
+      color: #484848;
+      font-size: 13px;
+    }
+  }
+
+  .boby-text {
+    font-size: 13px;
+    color: #484848;
+    padding-left: 50px;
+  }
+
+  .post-buttom-container {
+    padding: 5px 50px;
+    display: flex;
+
+    img {
+      margin-right: 5px;
+    }
+
+    .heart-count {
+      font-size: 11px;
+      margin-right: 20px;
+      align-items: center;
+    }
+  }
+
+  .analytics-container {
+    background-color: #f1f1f1;
+    height: 230px;
+    margin: 10px 10px;
+    border-radius: 10%;
+
+    .analytics > span {
+      font-size: 12px;
+      color: #484848;
+      margin-left: 35px;
+    }
+
+    .graph-container {
+      display: flex;
+    }
+
+    .graph {
+      margin-left: 30px;
+      margin: 5px 15px 0px 10px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .graph-info-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      .graph-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .graph-text {
+          font-size: 13px;
+          margin-right: 15px;
+        }
+
+        .category {
+          display: flex;
+        }
+
+        .graph-img {
+          width: 10px;
+          margin-right: 5px;
+        }
+
+        span {
+          font-size: 11px;
+        }
+      }
+    }
+    hr {
+      margin: 5px 10px;
+    }
+  }
+}
