@@ -181,6 +181,14 @@ footer {
   margin: 0px;
 }
 
+.toggle-analytics {
+  transition: transform 0.3s ease, rotate 0.3s ease; /* クリック時の回転アニメーション */
+}
+
+.toggle-analytics.up {
+  transform: rotate(180deg); /* 上向きに180度回転 */
+}
+
 .show {
   display: block !important;
 }

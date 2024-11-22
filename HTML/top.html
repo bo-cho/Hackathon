@@ -229,8 +229,10 @@
           <img
             class="toggle-analytics"
             src="../Assets/navigate_next.svg"
-            alt="Navigate Icon"
+            style="cursor: pointer"
           />
+          <span>詳細</span>
+
           <span>詳細</span>
         </div>
       </div>
@@ -245,6 +247,11 @@
           const analytics = btn
             .closest(".post-container")
             .querySelector(".analytics-container");
+
+          // アイコンの状態を切り替え
+          btn.classList.toggle("up");
+
+          // アナリティクス部分の表示を切り替え
           analytics.classList.toggle("show");
         });
       });
