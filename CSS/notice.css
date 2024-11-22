@@ -112,6 +112,10 @@ header {
         display: block;
         /* 選択されたタブのコンテンツを表示 */
     }
+    .comment-container{
+        display: flex;
+        background-color: #fff;
+    }
 }
 
 /* body {
