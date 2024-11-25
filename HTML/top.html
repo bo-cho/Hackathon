@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/graph.js"></script>
     <link rel="stylesheet" href="../CSS/top.css" />
@@ -236,8 +237,24 @@
           <span>詳細</span>
         </div>
       </div>
-      <a href="" class="btn btn--orange btn--radius">投稿</a>
+      <button id="modal-btn" class="btn btn--orange btn--radius">投稿</button>
     </div>
+    <!-- 投稿モーダル部 -->
+    <div id="modal" class="modal fade-in">
+      <div class="modal-content">
+        <hr class="modal-top-border" size="2" color="#808080" />
+        <div class="button-container">
+          <button class="cancel">キャンセル</button>
+          <button class="post">投稿</button>
+        </div>
+        <hr size="1" color="#808080" />
+        <div class="post-input">
+          <img class="icon-img" src="../Assets/icon.svg" alt="User Icon" />
+          <span class="user-input">内容を入力...</span>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <span class="footer"></span>
     </footer>
@@ -255,6 +272,17 @@
           analytics.classList.toggle("show");
         });
       });
+      const modalBtn = document.getElementById("modal-btn");
+      const modal = document.getElementById("modal");
+      const closeBtn = document.getElementsByClassName("close")[0];
+
+      modalBtn.onclick = function () {
+        modal.classList.add("show"); // モーダルを表示
+      };
+
+      closeBtn.onclick = function () {
+        modal.classList.remove("show"); // モーダルを非表示
+      };
     </script>
   </body>
 </html>
