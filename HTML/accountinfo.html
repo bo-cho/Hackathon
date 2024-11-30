@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール編集</title>
+    <link rel="stylesheet" href="../CSS/accountinfo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            あちゃなるさんの情報
+        </header>
+        <div class="profile">
+            <div class="profile-info">
+                <div class="avatar"></div>
+                <div class="details">
+                    <p class="name">あちゃなる <span class="age">10代 <span class="status-dot"></span></span></p>
+                    <p class="bio">なんか須賀川にコストコほしい。</p>
+                </div>
+            </div>
+            <div class="tabs">
+                <button class="tab active">投稿履歴</button>
+                <button class="tab">アカウント情報</button>
+            </div>
+        </div>
+        <form class="form">
+            <div class="form-group">
+                <label for="nickname">ニックネーム</label>
+                <div class="input-group">
+                    <input type="text" id="nickname" value="あちゃなる">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <div class="input-group">
+                    <input type="email" id="email" value="achanal@hakkason.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">パスワード</label>
+                <div class="input-group">
+                    <input type="password" id="password" pattern="^[a-zA-Z0-9]{8,}$">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">年齢</label>
+                <div class="input-group">
+                    <input type="number" id="age" value="19">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender">性別</label>
+                <select class="gender">
+                    <option value="" selected hidden>女性</option>
+                    <option>男性</option>
+                    <option>女性</option>
+                    <option>その他</option>
+                    <option>回答しない</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">電話番号</label>
+                <div class="input-group">
+                    <input type="number" id="phone-number" value="12345678900">
+                </div>
+            </div>
+            <button type="submit" class="update-btn">更新</button>
+        </form>
+        <footer class="footer">
+            <button class="footer-btn"><img src="../Assets/homeicon.svg"></button>
+            <button class="footer-btn"><img src="../Assets/accounticon.svg"></button>
+            <button class="footer-btn"><img src="../Assets/notification.svg"></button>
+            <button class="footer-btn"><img src="../Assets/manual.svg"></button>
+        </footer>
+    </div>
+</body>
+</html>
