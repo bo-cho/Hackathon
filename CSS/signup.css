@@ -90,12 +90,6 @@ input, select {
     background-color: #82c4c4;
 }
 
-/* 利用規約 */
-.terms {
-    text-align: center;
-    margin: 10px 0;
-}
-
 /* 中央配置用 */
 .up-button {
     display: flex;
