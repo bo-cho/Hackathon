@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="signup" content="新規登録">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="../CSS/signup.css" />
+        <script src="../js/signup.js"></script>
         <title>新規登録</title>
     </head>
 
@@ -13,33 +14,77 @@
         <main>
             <div class="signup">
                 <h1>新規登録</h1>
-                <form method="post" action="" class="signup-form">
-                    <input type="text" class="nickname" maxlength="15" size="20px" placeholder="ニックネーム"><br>
-                    <input type="text" class="surname" maxlength="50" size="15px" placeholder="苗字">
-                    <input type="text" class="given_name" maxlength="50" size="15px" placeholder="名前"><br>
-                    <input type="number" class="years" maxlength="999" placeholder="年齢">
-                    <select class="gender">
-                        <option value="" selected hidden>性別</option>
-                        <option>男</option>
-                        <option>女</option>
-                        <option>その他</option>
-                        <option>回答しない</option>
-                    </select>
-                    <input type="tel" class="telephone" maxlength="12" placeholder="電話番号"><br>
+                <!--<form method="post" action="" class="signup-form">-->
+                    <div class="TxtBoxs">
+                        <div class="TxtDeco"></div>
+                        <input type="text" class="nickname" maxlength="15" size="20px" placeholder="ニックネーム"> 
+                    </div>
+                    <div class="flex-container">
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="text" class="surname" maxlength="50" size="15px" placeholder="苗字">
+                        </div>
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="text" class="given_name" maxlength="50" size="15px" placeholder="名前">
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="number" class="years" maxlength="999" placeholder="年齢">
+                        </div>
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <select class="gender">
+                                <option value="" selected hidden>性別</option>
+                                <option>男</option>
+                                <option>女</option>
+                                <option>その他</option>
+                                <option>回答しない</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="TxtBoxs">
+                        <div class="TxtDeco"></div>
+                        <input type="tel" class="telephone" maxlength="12" placeholder="電話番号">
+                    </div>
                     <form class="h-adr">
                         <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
                         <span class="p-country-name" style="display:none;">Japan</span>
-                        <input type="text" class="p-postal-code" size="8" maxlength="8" placeholder="郵便番号"><br>
-                        <input type="text" class="p-region p-locality p-street-address p-extended-address" placeholder="住所"/>
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="text" class="p-postal-code" size="8" maxlength="8" placeholder="郵便番号">
+                        </div>
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="text" class="p-region p-locality p-street-address p-extended-address" placeholder="住所" size="35px"/>
+                        </div>
                     </form>
-                    <input type="email" class="mail" maxlength="99" placeholder="メールアドレス"><br>
-                    <input type="password" class="password" minlength="6" placeholder="パスワード">
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <input type="file" class="document" required>
-                    </form>
-                    <input type="checkbox" required><a href="">利用規約</a>に同意する
-                    <button type="submit" class="signup-btn">新規登録</button>
-                </form>
+                    <div class="TxtBoxs">
+                        <div class="TxtDeco"></div>
+                        <input type="email" class="mail" maxlength="99" placeholder="メールアドレス">
+                    </div>
+                    <div class="TxtBoxs">
+                        <div class="TxtDeco"></div>
+                        <input type="password" class="password" pattern="^[a-zA-Z0-9]{8,}$" placeholder="パスワード">
+                    </div>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="upload-file">
+                                <button class="upbtn">本人確認書類を提出する</button>
+                                <input type="file" class="document" required>
+                            </div>
+                        </form>
+                    <div class="terms">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required><span><a href="">利用規約</a>に同意する</span>
+                        </label>
+                    </div>
+                    <div class="up-button">
+                        <button type="submit" class="signup-btn">新規登録</button>
+                    </div>
+                <!--</form>-->
             </div>
         </main>
         <footer></footer>

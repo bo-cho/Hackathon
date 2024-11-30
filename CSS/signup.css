@@ -1,17 +1,10 @@
 @charset "UTF-8";
 
+/* 全体リセット */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
-    font-family: Arial,sans-serif;
-    font-size: 16px;
-    color: #000000;
-    line-height: 1;
-    background-color: #ffffff;
 }
 
 header {
@@ -21,52 +14,135 @@ header {
     margin: 0px;
 }
 
-.signup {
-    width: 930px;
-    max-width: 90%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #bddbdb;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    background-color: #ffffff;
+    margin: 0;
 }
 
+/* サインアップボックス全体 */
+.signup {
+    width: 90%; /* 全体幅の90%を使用 */
+    max-width: 400px; /* 最大幅を400pxに制限 */
+    margin: 20px auto;
+    background-color: #e6f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* タイトル */
 h1 {
     text-align: center;
-    font-size: 16px;
-    margin: 10px 0 10px 0;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-input {
-    margin-bottom: 10px;
+/* 入力ボックス */
+.TxtBoxs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.TxtDeco {
+    background-color: #9FD6D6;
+    width: 10px;
+    height: 36px;
+}
+
+input, select {
+    width: 100%; /* 横幅を親に合わせる */
     padding: 10px;
+    border: none;
+    background-color: #E7E5E5;
 }
 
-input::before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: #8ac5c5;
-    border-radius: 3px;
+/* 横並び用のflexコンテナ */
+.flex-container {
+    display: flex;
+    gap: 10px; /* 要素間の間隔 */
 }
 
-.surname,.age {
-    margin-right: 5px;
+/* flex要素が小さい画面で折り返す設定 */
+.flex-container input,
+.flex-container select {
+    flex: 1; /* 均等に分割 */
 }
 
-.signup-btn {
+/* ボタン */
+.signup-btn, .upbtn {
+    display: block;
+    width: 100%; /* ボタンを親幅に合わせる */
+    padding: 15px;
+    background-color: #9FD6D6;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signup-btn:hover, .upbtn:hover {
+    background-color: #82c4c4;
+}
+
+/* 中央配置用 */
+.up-button {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.upload-file {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    height: 60px;
-    width: 200px;
-    border-radius: 100px;
-    background-color: #8ac5c5;
+}
+
+.upbtn {
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #9fd6d6;
     color: #ffffff;
     text-align: center;
     border: none;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.document {
+    display: none;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center; /* チェックボックスとテキストの高さを揃える */
+    gap: 5px; /* チェックボックスとテキストの間隔 */
+}
+
+.checkbox-label span {
+    white-space: nowrap; /* テキストが折り返されないようにする */
+    font-size: 14px; /* テキストのサイズを調整 */
+}
+
+@media screen and (max-width: 375px) {
+    .flex-container {
+        flex-direction: column; /* 小画面では縦に並べる */
+        gap: 0; /* 間隔を削減 */
+    }
 }
