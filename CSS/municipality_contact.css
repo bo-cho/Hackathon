@@ -1,0 +1,240 @@
+body {
+  margin: 0px;
+}
+header {
+  background-color: #8ac5c5;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+}
+.header {
+  text-align: center;
+  color: #484848;
+  padding-top: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0px;
+
+  span {
+    font-size: 25px;
+    color: #808080;
+  }
+}
+
+.main-container {
+  margin: 0px;
+
+  /* タブ全体を囲むコンテナの設定 */
+  .tab-switch {
+    display: flex; /* タブを横並びに配置 */
+    flex-wrap: wrap; /* 幅を超えたら折り返し */
+    max-width: 800px; /* コンテナの最大幅を指定 */
+    margin: auto; /* コンテナを中央に配置 */
+    justify-content: center; /* タブを中央に寄せる */
+  }
+
+  .tab-switch:after {
+    content: ""; /* 空の擬似要素を作成 */
+    width: 100%; /* 幅をコンテナ全体に設定 */
+    display: block; /* ブロック要素として表示 */
+    order: -1; /* 擬似要素を上部に配置 */
+    margin-top: -5px; /* タブボタンから-5pxの余白を設定 */
+  }
+
+  /* 各タブボタンの設定 */
+  .tab-switch > label {
+    flex: 1 1 auto; /* タブボタンが均等に幅をとるが、幅を超えると折り返す */
+    min-width: 70px; /* 各タブの最小幅を70pxに設定 */
+    order: -1; /* タブボタンを上部に配置 */
+    position: relative; /* 子要素の絶対位置指定の基準 */
+    padding: 5px 1em; /* 上下に0.7em、左右に1emの内側余白 */
+    background-color: #9fd6d6; /* タブボタンの背景色 */
+    color: #484848; /* 文字色をグレーに設定 */
+    text-align: center; /* 文字を中央揃え */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    border-radius: 10px 10px 0 0; /* 上部角を丸める */
+    margin: 0px 10px;
+  }
+
+  /* タブボタンのホバーおよび選択状態のスタイル */
+  .tab-switch > label:hover,
+  .tab-switch label:has(:checked) {
+    background-color: #bddbdb; /* ホバー/選択時の背景色 */
+    color: #484848; /* ホバー/選択時の文字色を白に設定 */
+  }
+
+  /* ラジオボタン自体は非表示 */
+  .tab-switch input {
+    display: none; /* ラジオボタンを見えなくする */
+  }
+
+  /* タブコンテンツのスタイル */
+  .tab-switch > div {
+    display: none; /* 初期状態ではコンテンツを非表示に */
+    width: 100%; /* コンテンツの幅を全体に設定 */
+    height: 480px;
+    padding: 1.5em 1em; /* 上下に1.5em、左右に1emの内側余白 */
+    background-color: #bddbdb;
+  }
+
+  /* 選択されたタブのコンテンツを表示 */
+  .tab-switch label:has(:checked) + div {
+    display: block; /* 選択されたタブのコンテンツを表示 */
+  }
+}
+
+/* 投稿依頼 */
+.card-container{
+
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+}
+
+.datatime{
+  text-align: end;
+  font-size: 13px;
+  text-wrap: wrap;
+}
+
+.post-in-container{
+  margin: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  height: auto;
+}
+
+
+
+.post-text{
+  font-size: 13px;
+  color: #484848;
+  word-break: break-all;
+}
+
+/* グラフ部分 */
+.post-top-container {
+  display: flex;
+  align-items: center;
+
+  .icon-img {
+    border-radius: 25ch;
+    margin-right: 10px;
+  }
+
+  .username {
+    color: #484848;
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  .post-time-ago {
+    color: #484848;
+    font-size: 13px;
+  }
+}
+
+.boby-text {
+  font-size: 13px;
+  color: #484848;
+  padding-left: 10px;
+  margin-top: 10px;
+  word-break: break-all;
+}
+
+.analytics-container {
+  margin-top: 20px;
+
+  .analytics > span {
+    font-size: 12px;
+    color: #484848;
+    margin-left: 5px;
+  }
+
+  .graph-container {
+    display: flex;
+  }
+
+  .graph {
+    margin-left: 30px;
+    margin: 5px 5px 0px 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .graph-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .categorys {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 60px;
+      justify-content: center;
+    }
+    .graph-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 8px;
+
+      .graph-text {
+        font-size: 13px;
+        margin-right: 10px;
+        width: 80px;
+      }
+
+      .graph-img {
+        width: 10px;
+        margin-right: 2px;
+      }
+
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+  hr {
+    margin: 5px 10px;
+  }
+}
+
+.button-co{
+  text-align: center;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 17px;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #fff;
+  
+  border: none;
+}
+
+button.btn {
+  background-color: #9fd6d6;
+}
+
+button.btn:hover {
+  background-color: #9fd6d6;
+}
+
+.btn--radius {
+  border-radius: 100vh;
+}
