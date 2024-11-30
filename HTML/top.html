@@ -233,8 +233,6 @@
             style="cursor: pointer"
           />
           <span>詳細</span>
-
-          <span>詳細</span>
         </div>
       </div>
       <button id="modal-btn" class="btn btn--orange btn--radius">投稿</button>
@@ -244,13 +242,13 @@
       <div class="modal-content">
         <hr class="modal-top-border" size="2" color="#808080" />
         <div class="button-container">
-          <button class="cancel">キャンセル</button>
+          <button id="cancel-modal-btn" class="cancel">キャンセル</button>
           <button class="post">投稿</button>
         </div>
         <hr size="1" color="#808080" />
         <div class="post-input">
           <img class="icon-img" src="../Assets/icon.svg" alt="User Icon" />
-          <span class="user-input">内容を入力...</span>
+          <textarea class="user-input" placeholder="内容を入力..."></textarea>
         </div>
       </div>
     </div>
@@ -259,29 +257,31 @@
       <span class="footer"></span>
     </footer>
     <script>
+      const modalBtn = document.getElementById("modal-btn");
+      const modal = document.getElementById("modal");
+      const closeBtn = document.getElementById("cancel-modal-btn");
+
       document.querySelectorAll(".toggle-analytics").forEach((btn) => {
         btn.addEventListener("click", () => {
           const analytics = btn
             .closest(".post-container")
             .querySelector(".analytics-container");
-
-          // アイコンの状態を切り替え
-          btn.classList.toggle("up");
-
-          // アナリティクス部分の表示を切り替え
           analytics.classList.toggle("show");
         });
       });
-      const modalBtn = document.getElementById("modal-btn");
-      const modal = document.getElementById("modal");
-      const closeBtn = document.getElementsByClassName("close")[0];
 
+      // モーダルを表示
       modalBtn.onclick = function () {
         modal.classList.add("show"); // モーダルを表示
       };
 
+      // モーダルを非表示
       closeBtn.onclick = function () {
         modal.classList.remove("show"); // モーダルを非表示
+        modal.classList.add("hide"); // 非表示クラスを追加
+        setTimeout(() => {
+          modal.classList.remove("hide"); // アニメーション後に非表示状態をリセット
+        }, 500); // トランジション時間（CSSと一致）
       };
     </script>
   </body>
