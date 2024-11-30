@@ -172,9 +172,9 @@ input {
     padding: 10px 0;
 }
 
-.footer-btn img {
-    width: 24px;
-    height: 24px;
+.footer-btn {
+    border: none;
+    background: none;
 }
 
 /* レスポンシブデザイン */
