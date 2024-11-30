@@ -119,8 +119,51 @@ header {
         margin: 10px 0;
         padding: 5px 10px;
         border-radius: 15px;
+        align-items: center;
 
 
+        .comment-main{
+            display: flex;
+            width: 95%;
+        }
+        .icon{
+            display: flex;
+            margin-right: 5px;
+            align-items: center;
+        }
+        .comment-substance{
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .check-icons{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+        .comment-text{
+            color: #808080;
+        }
+        .name-star{
+            display: flex;
+            align-items: center;
+        }
+        .star{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+        .comment-text{
+            display: flex;
+        }
+        .detail-button{
+            display: flex;
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
