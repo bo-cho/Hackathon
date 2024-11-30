@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール編集</title>
+    <link rel="stylesheet" href="../CSS/accountinfo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            あちゃなるさんの情報
+        </header>
+        <div class="profile">
+            <div class="profile-info">
+                <div class="avatar"></div>
+                <div class="details">
+                    <p class="name">あちゃなる <span class="age">20代 <span class="status-dot"></span></span></p>
+                    <p class="bio">なんか須賀川にコストコほしい。</p>
+                </div>
+            </div>
+            <div class="tabs">
+                <button class="tab active">投稿履歴</button>
+                <button class="tab">アカウント情報</button>
+            </div>
+        </div>
+        <form class="form">
+            <div class="form-group">
+                <label for="nickname">ニックネーム</label>
+                <div class="input-group">
+                    <input type="text" id="nickname" value="あちゃなる">
+                    <button type="button" class="edit-btn">✏️</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <div class="input-group">
+                    <input type="email" id="email" value="achanal@hakkason.com">
+                    <button type="button" class="edit-btn">✏️</button>
+                </div>
+            </div>
+            <!-- 以下のニックネーム入力欄を追加 -->
+            <div class="form-group">
+                <label for="nickname2">ニックネーム</label>
+                <div class="input-group">
+                    <input type="text" id="nickname2" value="あちゃなる">
+                    <button type="button" class="edit-btn">✏️</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nickname3">ニックネーム</label>
+                <div class="input-group">
+                    <input type="text" id="nickname3" value="あちゃなる">
+                    <button type="button" class="edit-btn">✏️</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nickname4">ニックネーム</label>
+                <div class="input-group">
+                    <input type="text" id="nickname4" value="あちゃなる">
+                    <button type="button" class="edit-btn">✏️</button>
+                </div>
+            </div>
+            <button type="submit" class="update-btn">更新</button>
+        </form>
+        <footer class="footer">
+            <button class="footer-btn">👤</button>
+            <button class="footer-btn">❗</button>
+            <button class="footer-btn">✉️</button>
+        </footer>
+    </div>
+</body>
+</html>
