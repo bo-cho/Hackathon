@@ -1,0 +1,223 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #8ac5c5;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    color: #484848;
+    padding-top: 15px;
+}
+
+.title {
+    text-align: center;
+    margin: 10px 0px;
+
+    span {
+        font-size: 25px;
+        color: #808080;
+    }
+}
+
+.main-container {
+    margin: 0px;
+
+    /* タブ全体を囲むコンテナの設定 */
+    .tab-switch {
+        display: flex;
+        /* タブを横並びに配置 */
+        flex-wrap: wrap;
+        /* 幅を超えたら折り返し */
+        max-width: 800px;
+        /* コンテナの最大幅を指定 */
+        margin: auto;
+        /* コンテナを中央に配置 */
+        justify-content: center;
+        /* タブを中央に寄せる */
+    }
+
+    .tab-switch:after {
+        content: "";
+        /* 空の擬似要素を作成 */
+        width: 100%;
+        /* 幅をコンテナ全体に設定 */
+        display: block;
+        /* ブロック要素として表示 */
+        order: -1;
+        /* 擬似要素を上部に配置 */
+        margin-top: -5px;
+        /* タブボタンから-5pxの余白を設定 */
+    }
+
+    /* 各タブボタンの設定 */
+    .tab-switch>label {
+        flex: 1 1 auto;
+        /* タブボタンが均等に幅をとるが、幅を超えると折り返す */
+        min-width: 70px;
+        /* 各タブの最小幅を70pxに設定 */
+        order: -1;
+        /* タブボタンを上部に配置 */
+        position: relative;
+        /* 子要素の絶対位置指定の基準 */
+        padding: 5px 1em;
+        /* 上下に0.7em、左右に1emの内側余白 */
+        background-color: #9fd6d6;
+        /* タブボタンの背景色 */
+        color: #484848;
+        /* 文字色をグレーに設定 */
+        text-align: center;
+        /* 文字を中央揃え */
+        cursor: pointer;
+        /* カーソルをポインターに変更 */
+        border-radius: 10px 10px 0 0;
+        /* 上部角を丸める */
+        margin: 0px 10px;
+    }
+
+    /* タブボタンのホバーおよび選択状態のスタイル */
+    .tab-switch>label:hover,
+    .tab-switch label:has(:checked) {
+        background-color: #bddbdb;
+        /* ホバー/選択時の背景色 */
+        color: #484848;
+        /* ホバー/選択時の文字色を白に設定 */
+    }
+
+    /* ラジオボタン自体は非表示 */
+    .tab-switch input {
+        display: none;
+        /* ラジオボタンを見えなくする */
+    }
+
+    /* タブコンテンツのスタイル */
+    .tab-switch>div {
+        display: none;
+        /* 初期状態ではコンテンツを非表示に */
+        width: 100%;
+        /* コンテンツの幅を全体に設定 */
+        height: 480px;
+        padding: 1.5em 1em;
+        /* 上下に1.5em、左右に1emの内側余白 */
+        background-color: #bddbdb;
+    }
+
+    /* 選択されたタブのコンテンツを表示 */
+    .tab-switch label:has(:checked)+div {
+        display: block;
+        /* 選択されたタブのコンテンツを表示 */
+    }
+    /*  */
+    .comment-container{
+        display: flex;
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 5px 10px;
+        border-radius: 15px;
+        align-items: center;
+
+
+        .comment-main{
+            display: flex;
+            width: 95%;
+        }
+        .icon{
+            display: flex;
+            margin-right: 5px;
+            align-items: center;
+        }
+        .comment-substance{
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .check-icons{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+        .comment-text{
+            color: #808080;
+        }
+        .name-star{
+            display: flex;
+            align-items: center;
+        }
+        .star{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+        .comment-text{
+            display: flex;
+        }
+        .detail-button{
+            display: flex;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+/* body {
+    margin: 0px;
+}
+
+header {
+    background-color: #8AC5C5;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+}
+
+#header-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+#title-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-size: 20px;
+    color: #808080;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#notice-all {
+    height: 556.6px;
+}
+
+#tab-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+#notice-main {
+    background-color: #BDDBDB;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.notice-tab {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    background-color: #BDDBDB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: center;
+    align-items: flex-end;
+} */
