@@ -15,7 +15,7 @@
             <div class="profile-info">
                 <div class="avatar"></div>
                 <div class="details">
-                    <p class="name">あちゃなる <span class="age">20代 <span class="status-dot"></span></span></p>
+                    <p class="name">あちゃなる <span class="age">10代 <span class="status-dot"></span></span></p>
                     <p class="bio">なんか須賀川にコストコほしい。</p>
                 </div>
             </div>
@@ -29,36 +29,40 @@
                 <label for="nickname">ニックネーム</label>
                 <div class="input-group">
                     <input type="text" id="nickname" value="あちゃなる">
-                    <button type="button" class="edit-btn">✏️</button>
                 </div>
             </div>
             <div class="form-group">
                 <label for="email">メールアドレス</label>
                 <div class="input-group">
                     <input type="email" id="email" value="achanal@hakkason.com">
-                    <button type="button" class="edit-btn">✏️</button>
                 </div>
             </div>
-            <!-- 以下のニックネーム入力欄を追加 -->
+            <div class="form-group">
+                <label for="password">パスワード</label>
+                <div class="input-group">
+                    <input type="password" id="password" pattern="^[a-zA-Z0-9]{8,}$">
+                </div>
+            </div>
             <div class="form-group">
                 <label for="age">年齢</label>
                 <div class="input-group">
-                    <input type="number" id="age" value="21">
-                    <button type="button" class="edit-btn">✏️</button>
+                    <input type="number" id="age" value="19">
                 </div>
             </div>
             <div class="form-group">
-                <label for="nickname3">ニックネーム</label>
-                <div class="input-group">
-                    <input type="text" id="nickname3" value="あちゃなる">
-                    <button type="button" class="edit-btn">✏️</button>
-                </div>
+                <label for="gender">性別</label>
+                <select class="gender">
+                    <option value="" selected hidden>女性</option>
+                    <option>男性</option>
+                    <option>女性</option>
+                    <option>その他</option>
+                    <option>回答しない</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="nickname4">ニックネーム</label>
+                <label for="phone-number">電話番号</label>
                 <div class="input-group">
-                    <input type="text" id="nickname4" value="あちゃなる">
-                    <button type="button" class="edit-btn">✏️</button>
+                    <input type="number" id="phone-number" value="12345678900">
                 </div>
             </div>
             <button type="submit" class="update-btn">更新</button>
