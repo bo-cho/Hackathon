@@ -1,0 +1,69 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #bddbdb;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+}
+
+#All{
+  margin-top: 0px;
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.RoginBox {
+  display: flex;
+  height: 330px;
+  width: 80%;
+  background-color: #E6F9F9;
+  margin: 30px 10%;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: #9FD6D6;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.ButtonText {
+  font-size: 15px;
+  color: white;
+}
+
+.TxtBoxs {
+  display: flex;
+  margin-top: 20px;
+}
+
+.TxtDeco {
+  background-color: #9FD6D6;
+  width: 34px;
+  height: 36px;
+}
+
+.TxtArea {
+  border: none;
+  background-color: #E7E5E5;
+  vertical-align: middle;
+}
+
+#CautionTxt{
+  font-size: 10px;
+}
