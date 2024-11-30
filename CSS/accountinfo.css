@@ -5,31 +5,35 @@ body {
     color: #333;
 }
 
+/* 全体のコンテナ */
 .container {
     max-width: 500px;
     margin: 0 auto;
-    background-color: white;
-    /*border-radius: 10px;*/
+    background-color: #bddbdb;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* ヘッダー */
 .header {
     background-color: #a4d0c3;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+    border-bottom: 1px solid #ccc;
 }
 
+/* プロフィールセクション */
 .profile {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
+    background-color: #fff;
 }
 
 .profile-info {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .avatar {
@@ -70,28 +74,49 @@ body {
     margin: 5px 0 0;
 }
 
+/* タブ */
 .tabs {
     display: flex;
-    margin-top: 20px;
+    justify-content: space-between;
+    background-color: #a4d0c3;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .tab {
     flex: 1;
     padding: 10px;
-    background-color: #e0f3ef;
-    border: none;
+    background-color: #bddbdb;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    border: none;
+    color: #333;
+    transition: background-color 0.3s ease;
 }
 
 .tab.active {
-    background-color: white;
-    border-bottom: 2px solid #a4d0c3;
+    background-color: #9fd6d6;
+    color: #333;
+    border-bottom: 3px solid #a4d0c3;
 }
 
+.tab:hover {
+    background-color: #d7efea;
+}
+
+/* フォームセクション */
 .form {
-    padding: 20px;
+    padding: 40px;
+    background-color: #bddbdb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .form-group {
@@ -104,42 +129,42 @@ label {
     font-size: 14px;
 }
 
-select {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    width: 200px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-}
-
+select,
 input {
-    flex: 1;
+    width: 100%;
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+/* 更新ボタン */
+.update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .update-btn {
-    display: block;
-    width: 100%;
+    width: 80%;
     padding: 10px;
     font-size: 16px;
     background-color: #a4d0c3;
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 20px;
+    color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.update-btn:hover {
+    background-color: #82c4b3;
+}
+
+/* フッター */
 .footer {
     display: flex;
     justify-content: space-around;
@@ -147,9 +172,18 @@ input {
     padding: 10px 0;
 }
 
-.footer-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+.footer-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 500px) {
+    .tab {
+        font-size: 14px;
+    }
+
+    .update-btn {
+        font-size: 14px;
+    }
 }
