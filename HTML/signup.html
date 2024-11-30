@@ -19,28 +19,33 @@
                         <div class="TxtDeco"></div>
                         <input type="text" class="nickname" maxlength="15" size="20px" placeholder="ニックネーム"> 
                     </div>
-                    <div class="TxtBoxs">
-                        <div class="TxtDeco"></div>
-                        <input type="text" class="surname" maxlength="50" size="15px" placeholder="苗字">
+                    <div class="flex-container">
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="text" class="surname" maxlength="50" size="15px" placeholder="苗字">
+                        </div>
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="text" class="given_name" maxlength="50" size="15px" placeholder="名前">
+                        </div>
                     </div>
-                    <div class="TxtBoxs">
-                        <div class="TxtDeco"></div>
-                        <input type="text" class="given_name" maxlength="50" size="15px" placeholder="名前">
+                    <div class="flex-container">
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <input type="number" class="years" maxlength="999" placeholder="年齢">
+                        </div>
+                        <div class="TxtBoxs">
+                            <div class="TxtDeco"></div>
+                            <select class="gender">
+                                <option value="" selected hidden>性別</option>
+                                <option>男</option>
+                                <option>女</option>
+                                <option>その他</option>
+                                <option>回答しない</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="TxtBoxs">
-                        <div class="TxtDeco"></div>
-                        <input type="number" class="years" maxlength="999" placeholder="年齢">
-                    </div>
-                    <div class="TxtBoxs">
-                        <div class="TxtDeco"></div>
-                        <select class="gender">
-                            <option value="" selected hidden>性別</option>
-                            <option>男</option>
-                            <option>女</option>
-                            <option>その他</option>
-                            <option>回答しない</option>
-                        </select>
-                    </div>
+                    
                     <div class="TxtBoxs">
                         <div class="TxtDeco"></div>
                         <input type="tel" class="telephone" maxlength="12" placeholder="電話番号">
@@ -72,7 +77,9 @@
                             </div>
                         </form>
                     <div class="terms">
-                        <input type="checkbox" required><a href="">利用規約</a>に同意する
+                        <label class="checkbox-label">
+                            <input type="checkbox" required><span><a href="">利用規約</a>に同意する</span>
+                        </label>
                     </div>
                     <div class="up-button">
                         <button type="submit" class="signup-btn">新規登録</button>
