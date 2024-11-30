@@ -16,3 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // 本人確認書類のボタンとファイル選択フィールドを取得
+    const uploadButton = document.querySelector(".upbtn"); // ボタン
+    const fileInput = document.querySelector(".document"); // ファイル選択用input
+
+    // ボタンのクリックイベントを設定
+    if (uploadButton && fileInput) {
+        uploadButton.addEventListener("click", (event) => {
+            event.preventDefault(); // デフォルト動作を防ぐ
+            fileInput.click(); // ファイル選択ダイアログを開く
+        });
+    } else {
+        console.error("アップロードボタンまたはファイル選択フィールドが見つかりません");
+    }
+});
