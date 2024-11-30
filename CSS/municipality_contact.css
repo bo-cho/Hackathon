@@ -84,3 +84,157 @@ header {
     display: block; /* 選択されたタブのコンテンツを表示 */
   }
 }
+
+/* 投稿依頼 */
+.card-container{
+
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+}
+
+.datatime{
+  text-align: end;
+  font-size: 13px;
+  text-wrap: wrap;
+}
+
+.post-in-container{
+  margin: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  height: auto;
+}
+
+
+
+.post-text{
+  font-size: 13px;
+  color: #484848;
+  word-break: break-all;
+}
+
+/* グラフ部分 */
+.post-top-container {
+  display: flex;
+  align-items: center;
+
+  .icon-img {
+    border-radius: 25ch;
+    margin-right: 10px;
+  }
+
+  .username {
+    color: #484848;
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  .post-time-ago {
+    color: #484848;
+    font-size: 13px;
+  }
+}
+
+.boby-text {
+  font-size: 13px;
+  color: #484848;
+  padding-left: 10px;
+  margin-top: 10px;
+  word-break: break-all;
+}
+
+.analytics-container {
+  margin-top: 20px;
+
+  .analytics > span {
+    font-size: 12px;
+    color: #484848;
+    margin-left: 5px;
+  }
+
+  .graph-container {
+    display: flex;
+  }
+
+  .graph {
+    margin-left: 30px;
+    margin: 5px 5px 0px 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .graph-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .categorys {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 60px;
+      justify-content: center;
+    }
+    .graph-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 8px;
+
+      .graph-text {
+        font-size: 13px;
+        margin-right: 10px;
+        width: 80px;
+      }
+
+      .graph-img {
+        width: 10px;
+        margin-right: 2px;
+      }
+
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+  hr {
+    margin: 5px 10px;
+  }
+}
+
+.button-co{
+  text-align: center;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 17px;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #fff;
+  
+  border: none;
+}
+
+button.btn {
+  background-color: #9fd6d6;
+}
+
+button.btn:hover {
+  background-color: #9fd6d6;
+}
+
+.btn--radius {
+  border-radius: 100vh;
+}
