@@ -156,7 +156,7 @@ button.btn {
   letter-spacing: 0.1em;
   color: #fff;
   position: fixed;
-  bottom: 60px;
+  bottom: 65px;
   right: 10px;
   border: none;
 }
@@ -171,15 +171,6 @@ button.btn:hover {
 
 .btn--radius {
   border-radius: 100vh;
-}
-
-footer {
-  background-color: #8ac5c5;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 50px;
-  margin: 0px;
 }
 
 .toggle-analytics {
@@ -292,4 +283,23 @@ footer {
 /* 非表示状態（消える時のアニメーション用） */
 #modal.hide {
   transform: translateY(100%); /* 下にスクロールするアニメーション */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #8ac5c5;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 10px 0;
+}
+ 
+.footer-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
