@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       data: {
         datasets: [
           {
-            data: [20, 20, 20, 20, 20, 20],
+            data: [80, 70, 30, 20, 10, 0],
             backgroundColor: [
               "rgba(208,66,84, 1)",
               "rgba(277,106,60, 1)",
