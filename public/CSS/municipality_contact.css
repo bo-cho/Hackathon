@@ -86,21 +86,21 @@ header {
 }
 
 /* 投稿依頼 */
-.card-container{
-
+.card-container {
+  margin: 10px 0px;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
   height: auto;
 }
 
-.datatime{
+.datatime {
   text-align: end;
   font-size: 13px;
   text-wrap: wrap;
 }
 
-.post-in-container{
+.post-in-container {
   margin: 5px;
   padding: 10px;
   background-color: #f1f1f1;
@@ -108,9 +108,7 @@ header {
   height: auto;
 }
 
-
-
-.post-text{
+.post-text {
   font-size: 13px;
   color: #484848;
   word-break: break-all;
@@ -204,7 +202,7 @@ header {
   }
 }
 
-.button-co{
+.button-co {
   text-align: center;
 }
 
@@ -223,7 +221,7 @@ button.btn {
   text-decoration: none;
   letter-spacing: 0.1em;
   color: #fff;
-  
+
   border: none;
 }
 
@@ -250,7 +248,7 @@ button.btn:hover {
   margin: 0px;
   padding: 10px 0;
 }
- 
+
 .footer-btn {
   background: none;
   border: none;
